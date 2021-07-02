@@ -4,6 +4,8 @@ if Player.lower() != 'yes':
     print("Good Bye")
     quit()
 
+name_player = input("Enter Your Name: ")
+
 print("Let's Start the Game :)")
 score = 0
 
