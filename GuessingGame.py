@@ -7,5 +7,9 @@ if top_number.isdigit():
 
     if top_number <= 0:
         print("Enter a large number then 0 next time.")
+        quit()
+
 else:
     print("Enter the number next time")
+    quit()
+
