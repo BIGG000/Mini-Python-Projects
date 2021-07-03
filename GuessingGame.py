@@ -13,3 +13,5 @@ else:
     print("Enter the number next time")
     quit()
 
+random_number = random.randint(0, top_number)
+print("Your Random Number is :",random_number)
