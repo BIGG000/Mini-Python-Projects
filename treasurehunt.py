@@ -36,7 +36,7 @@ print('Your Mission is to Find the Treasure and cross the deadly hudles.')
 
 def tresure_hunt():
 
-    colors = ['Red','Yellow','Blue']
+    colors = ['red','yellow','blue']
     random_number = random.randint(0, 2)
 
     choice1 = input("You are on the Crossroad, So where you want to go 'LEFT' and 'RIGHT'? ").lower()
@@ -47,10 +47,10 @@ def tresure_hunt():
             print("Now you are on the Island and it has a Castle, to go inside the castle you have to choose between the 3 doors, Choice wisely.")
             choice3 = input("The Door 1 is 'Red', \nThe Door 2 is 'Yellow', \nand The Last Door is 'Blue'\n").lower()
             computer_picks = colors[random_number]
-            if choice3 == computer_picks:
-                print("You found the treasue... Great You are now Rich")
-            else:
+            if choice3 != computer_picks:
                 print(f"You DIE LOSER, The Treasure is in the Door {computer_picks}")
+            else:
+                print("You found the treasue... Great You are now Rich")
         else:
             print("You are eaten by Crocodiles... So Badly Hurt !!!")
     else:
