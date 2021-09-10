@@ -33,10 +33,12 @@ def guessing_game():
     print("You got the answer in ",guesses,"guesses")
 guessing_game()
 
-while True:
-    answer = input("Do you want to play? \n")
-    if answer.lower() != 'yes':
-        print("ThankYou for Playing the Game !!!")
-        quit()
-    else:
-        guessing_game()
+def repeat_game():
+    while True:
+        answer = input("Do you want to play? \n")
+        if answer.lower() != 'yes':
+            print("ThankYou for Playing the Game !!!")
+            quit()
+        else:
+            guessing_game()
+repeat_game()
