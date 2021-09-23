@@ -39,12 +39,12 @@ def tresure_hunt():
     colors = ['red','yellow','blue']
     random_number = random.randint(0, 2)
 
-    choice1 = input("You are on the Crossroad, So where you want to go 'LEFT' and 'RIGHT'? ").lower()
+    choice1 = input(" ***FIRST HUDDLE*** \n You are on the Crossroad, So where you want to go 'LEFT' and 'RIGHT'? ").lower()
 
     if choice1 == 'left':
-        choice2 = input("Great You Passed first Huddle\nNow you in front of the river and you have to cross it.\nThe boat is on the way(you can 'wait'), or You can 'Swim' ").lower()
+        choice2 = input(" Great You Passed first Huddle\n *** SECOND HUDDLE *** \n Now you in front of the river and you have to cross it.\nThe boat is on the way(you can 'wait'), or You can 'Swim' ").lower()
         if choice2 == 'wait':
-            print("Now you are on the Island and it has a Castle, to go inside the castle you have to choose between the 3 doors, Choice wisely.")
+            print("*** LAST HUDDLE ***\n Now you are on the Island and it has a Castle, to go inside the castle you have to choose between the 3 doors, Choice wisely.")
             choice3 = input("The Door 1 is 'Red', \nThe Door 2 is 'Yellow', \nand The Last Door is 'Blue'\n").lower()
             computer_picks = colors[random_number]
             if choice3 != computer_picks:
