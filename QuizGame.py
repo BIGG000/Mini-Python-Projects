@@ -2,11 +2,12 @@ print(" Welcome To My Quiz Game \n Interesting Game to Play")
 Player = input(" Do you want to play the game? \n" )
 if Player.lower() != 'yes':
     print("Good Bye")
-    quit()
+    quit()  
 
 name_player = input("Enter Your Name: ")
 
 print("Let's Start the Game :) ",name_player)
+
 score = 0
 
 answer = input(' What is CPU stands for? \n ')

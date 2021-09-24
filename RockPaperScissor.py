@@ -2,7 +2,7 @@ import random
 
 user_wins = 0
 computer_wins = 0
-
+            #0      1         2    
 options = ["rock", "paper", "scissors"]
 
 while True:
@@ -30,6 +30,9 @@ while True:
         print("You won!")
         user_wins += 1
 
+    elif user_input == computer_pick:
+        print("It's a tie!")
+        
     else:
         print("You lost!")
         computer_wins += 1
